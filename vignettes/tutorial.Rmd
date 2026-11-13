@@ -1,0 +1,35 @@
+---
+title: "KnockoffGroup: A gene-based group knockoff framework for genome-wide association studies"
+output:
+  rmarkdown::html_vignette:
+    self_contained: true
+vignette: >
+  %\VignetteIndexEntry{KnockoffGroup: A gene-based group knockoff framework for genome-wide association studies}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<!-- The tutorial text and examples are maintained in README.md. -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", message = FALSE, warning = FALSE)
+```
+
+<style>
+body { max-width: 1000px; }
+img { max-width: 100%; height: auto; }
+</style>
+
+```{r tutorial-content, echo=FALSE, results='asis'}
+text <- readLines("../README.md", warn = FALSE)
+text <- text[-1L] # The vignette title is supplied by its YAML metadata.
+text <- gsub("vignettes/figures/", "figures/", text, fixed = TRUE)
+section <- ""
+for (i in seq_along(text)) {
+    if (grepl("^## ", text[i])) section <- text[i]
+    if (identical(text[i], "```r")) {
+        text[i] <- if (section == "## Installation") "```{r, eval=FALSE}" else "```{r}"
+    }
+}
+cat(knitr::knit_child(text = text, quiet = TRUE), sep = "\n")
+```

@@ -1,0 +1,16 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^build$
+^LICENSE\.md$
+^\.DS_Store$
+^\.Rhistory$
+^\.\.Rcheck$
+^KnockoffGroup\.Rcheck$
+^KnockoffGroup_[0-9.]+\.tar\.gz$
+
+^data-raw$
+^docs$
+^.*[/]\.DS_Store$
+^\.RData$
+^\.Ruserdata$

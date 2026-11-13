@@ -1,0 +1,31 @@
+Package: KnockoffGroup
+Type: Package
+Title: GWAS using group knockoff for FDR control
+Version: 0.1.0
+Authors@R: 
+    person(given = "Yue",
+           family = "Zhou",
+           role = c("aut", "cre"),
+           email = "yue.zhou@my.cityu.edu.hk",
+           comment = c("ORCID" = "0009-0003-9709-3783"))
+Author: Yue Zhou [aut, cre]
+Maintainer: Yue Zhou <yue.zhou@my.cityu.edu.hk>
+Description: Identification of putative causal genes in genome-wide association studies.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    stats,
+    Matrix,
+    CompQuadForm,
+    SPAtest
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
