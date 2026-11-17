@@ -4,9 +4,7 @@
 
 This package provides functions to generate group knockoffs, calculate gene-level association statistics, and compute multiple-knockoff q-values.
 
-![Overview of the KnockoffGroup workflow](vignettes/figures/KnockoffGroup_workflow.png)
-
-**Overview of KnockoffGroup.** (A) Group variants by gene annotations. (B) Generate group knockoffs using SCIP-G/SCIT-G. (C) Apply study-design-specific association tests, combine their p-values through ACAT, and perform multiple-knockoff gene selection.
+<img src="vignettes/figures/KnockoffGroup_workflow.png" alt="Overview of the KnockoffGroup workflow" />
 
 ---
 
